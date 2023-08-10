@@ -139,8 +139,7 @@ print(tf.__version__)
 
 
 # ### a. Create a model
-# 
-# <img src='https://drive.google.com/uc?id=1iZNZ3kwSHRNf-Irn3DZmMuBb6K-Lro7w'>
+
 
 # In[ ]:
 
@@ -151,7 +150,7 @@ from keras.models import Sequential
 
 # ### b. Defining different layers
 # 
-# <img src='https://drive.google.com/uc?id=16X6De2hua1XJBe3dfmUUeGTgP6PbXEpc'>
+
 
 # In[ ]:
 
@@ -160,13 +159,13 @@ from keras.models import Sequential
 from keras.layers import InputLayer, Dense 
 
 
-# <img src='https://drive.google.com/uc?id=1tsy4B6G0UN4-J4L4roOdoWQiZMUdgw2a'>
+
 
 # In[18]:
 
 
 # number of input neurons
-X_train.shapea
+X_train.shape
 
 
 # In[19]:
@@ -183,14 +182,14 @@ X_train.shape[1]
 input_neurons = X_train.shape[1]
 
 
-# <img src='https://drive.google.com/uc?id=1xL_hM9rGItZjsZ8Lofwzw_9fZUi4bgJo'>
+
 
 # In[ ]:
 
 
 # number of output neurons
 
-# since loan prediction is a binary classification problem, we will have single neuron in the output layer 
+# since loan prediction is a binary classification problem, I will have single neuron in the output layer 
 
 
 # In[ ]:
@@ -222,7 +221,7 @@ neuron_hidden_layer_2 = 5
 
 # activation function of different layers
 
-# for now I have picked relu as an activation function for hidden layers, you can change it as well
+# for now I have picked relu as an activation function for hidden layer
 # since it is a binary classification problem, I have used sigmoid activation function in the final layer
 
 
@@ -284,7 +283,7 @@ neuron_hidden_layer_2*output_neurons + 1
 
 # compiling the model
 
-# loss as binary_crossentropy, since we have binary classification problem
+# loss as binary_crossentropy, since it is binary classification problem
 # defining the optimizer as adam
 # Evaluation metric as accuracy
 
